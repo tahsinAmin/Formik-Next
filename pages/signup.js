@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -15,9 +14,7 @@ export default function Home() {
           <input type="text" placeholder="Password" className='border p-2' />
           <input type="button" value="submit" onsubmit="" className='border p-2' />
         </form>
-        <Link as="/signup" href="/signup">
-          <a>Sign Up</a>
-        </Link>
+        Or <a as="/signup" href="/signup">Log in</a>
       </main>
     </div>
   )
